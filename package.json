@@ -1,18 +1,20 @@
 {
-  "name": "{{projectName}}",
+  "name": "1-bear-1",
   "private": true,
-  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
+  "description": "Личный проект «1-bear-1» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
-    "lint": "npm run editorconfig",
-    "build": "echo 'Build task'",
-    "start": "echo 'Start task'"
+    "lint": "npm run editorconfig  && npm run stylelint",
+    "build": "gulp styles'",
+    "start": "gulp'"
   },
   "editorconfig-cli": [
     "*.json",
@@ -21,5 +23,10 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "less": "^4.1.3",
+    "touch": "^3.1.0"
+  }
 }
