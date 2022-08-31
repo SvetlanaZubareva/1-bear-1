@@ -2,40 +2,59 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Мишка</title>
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-header__nav">
-        <a class="main-header__link" href="">
-          <img class="main-header__img" src="" alt=" ">
-        </a>
-        <ul  class="main-header__ul">
-          <li class="main-header__li">
-            Каталог товаров
-          </li>
-          <li class="main-header__li">
-            Вязание на заказ
-          </li>
-          <li class="main-header__li visually-hidden">
-            Поиск
-          </li>
-          <li class="main-header__li visually-hidden">
-            Корзина
-          </li>
-          <li class="main-header__li">
-            Корзина: пока пуста
-          </li>
-          <li class="main-header__li">
-            Новые поступления
-          </li>
-          <li class="main-header__li">
-            Распродажа
-          </li>
-          <li class="main-header__li">
-            Бесплатная доставка по России
-          </li>
-        </ul>
+      <nav class="main-nav main-nav--closed  main-nav--nojs main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link site-list__item--active" href="">
+                Каталог товаров
+              </a>
+            </li>
+            <li  class="site-list__item">
+              <a class="site-list__link" href="">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">
+                Поиск
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Корзина
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Распродажа
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Бесплатная доставка по России
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
@@ -82,28 +101,28 @@
       <a class="main-container__link-product" href="">Заказать</a>
       <h2 class="blanks-secondary">Коротко о нас:</h2>
       <ul class="main-container__ul">
-        <li class="main-container__li">Экологически чистые материалы</li>
-        <li class="main-container__li">Скандинавский стиль по российской цене</li>
-        <li class="main-container__li">Увеличивает лайки на фотографиях</li>
-        <li class="main-container__li">Связано вручную с любовью и умилением</li>
-        <li class="main-container__li">Поддержка отечественного производителя</li>
-        <li class="main-container__li">Поставляется в подарочной упаковке</li>
+        <li class="main-container__list">Экологически чистые материалы</li>
+        <li class="main-container__list">Скандинавский стиль по российской цене</li>
+        <li class="main-container__list">Увеличивает лайки на фотографиях</li>
+        <li class="main-container__list">Связано вручную с любовью и умилением</li>
+        <li class="main-container__list">Поддержка отечественного производителя</li>
+        <li class="main-container__list">Поставляется в подарочной упаковке</li>
       </ul>
       <h2 class="blanks-secondary">Отзывы</h2>
       <p class="blanks-secondary__paragraph">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
       </p>
       <span> Анастасия Красильнекова</span>
       <e-mail>@misssssiskras</e-mail>
-      <a class="main-container__link-product" href="">Заказать</a>
+      <a class="main-container__link-product" href="">Написать</a>
       <h2 class="blanks-secondary">Контакты</h2>
       <section class="main-container__section">
         <span class="main-container__section-span">e-mail:</span>
-        <p class="main-container__section-p">info@mimimishkashop.ru</p>
+        <p class="main-container__section-span">info@mimimishkashop.ru</p>
         <span class="main-container__section-span">адрес:</span>
-        <p class="main-container__section-p">г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101</p>
+        <p class="main-container__section-span">г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101</p>
       </section>
       <img src="" alt="Карта">
-      <a class="main-container__link-product" href="">Заказать</a>
+      <a class="main-container__link-product" href="">Написать нам</a>
     </main>
     <footer class="main-footer">
       <ul class="main-footer__ul">
@@ -116,5 +135,6 @@
       <img src="" alt="">
       <img src="" alt="">
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
