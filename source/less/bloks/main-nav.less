@@ -36,7 +36,7 @@
   .main-nav__wrapper {
     flex-direction: column;
     z-index: 2;
-    background-color: #81b3d2;
+    background-color: #ffffff;
     position: absolute;
     width: 100%;
   
@@ -80,7 +80,7 @@
     border: none;
     cursor: pointer;
     background-color: #ffffff;
-    top: 17px;
+    top: 25px;
     right: 22px;
   
     @media (min-width: @tablet-width) {
@@ -108,21 +108,21 @@
     left: 0;
     width: 22px;
     height: 4px;
-    background-color: #81b3d2;
-    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
   }
   
   .main-nav--closed .main-nav__toggle:active::before {
-    background-color: fade(#81b3d2, 30%);
+    background-color: fade(#000000, 30%);
     box-shadow:
-      0 8px 0 0 fade(#81b3d2, 30%),
-      0 16px 0 0 fade(#81b3d2, 30%);
+      0 8px 0 0 fade(#000000, 30%),
+      0 16px 0 0 fade(#000000, 30%);
   }
   
   .main-nav--opened .main-nav__toggle {
     top: 17;
     right: 17;
-    background-color: #81b3d2;
+    background-color: #ffffff;
   
     &::before,
     &::after {
@@ -131,7 +131,7 @@
       right: 1px;
       width: 22px;
       height: 4px;
-      background-color: #ffffff;
+      background-color: #000000;
     }
   
     &::before {
@@ -180,7 +180,7 @@
   
   .main-nav--nojs .user-list__item {
     display: block;
-    background-color: #81b3d2;
+    background-color: #000000;
   }
   
   .main-nav__section {
