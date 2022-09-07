@@ -8,9 +8,52 @@
 
 .main-header {
     padding: 20px 0 20px;
+
+    @media (min-width: @tablet-width) {
+        padding: 0;
+    display: grid;
+    grid-template-columns: 167px 167px 100px 100px 211px;
+    grid-template-rows: 1fr 1fr;
+      }
 }
 
 .main-header__svg {
     position: absolute;
     right: 40%;
+
+    @media (min-width: @tablet-width) {
+        display: none;
+      }
+    
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+}
+
+.main-header__svg-tablet {
+    @media (min-width: @mobile) {
+        display: none;
+    }
+    @media (min-width: @tablet-width) {
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+}
+
+.main-header__svg-desktop {
+    @media (min-width: @mobile) {
+        display: none;
+    }
+    @media (min-width: @tablet-width) {
+        display: none;
+      }
+    
+      @media (min-width: @desktop-width) {
+        display: block;
+      }
 }
