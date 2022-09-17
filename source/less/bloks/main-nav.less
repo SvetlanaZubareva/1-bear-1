@@ -4,9 +4,9 @@
     list-style: none;
   
     @media (min-width: @tablet-width) {
-      display: flex;
       width: 100%;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 35% 20% 10% 10% 25%;
     }
   
     @media (min-width: @desktop-width) {
@@ -43,6 +43,10 @@
     @media (min-width: @mobile-width-only) {
       position: absolute;
       width: 100%;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 5%;
+      padding-right: 5%;
     }
   
     @media (min-width: @tablet-width) {
