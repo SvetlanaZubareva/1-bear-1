@@ -4,6 +4,12 @@
    box-sizing: border-box;
    background-size: 100%, cover;
    padding: 75px 20px 200px;
+   display: flex;
+   justify-content: center;
+
+   @media (min-width: @tablet-width) {
+      padding: 250px 20px 450px; 
+    }
 }
 
 .welcome-section-header__h1 {
@@ -11,4 +17,11 @@
    font-size: 27px;
    line-height: 30px;
    margin: 0;
+   width: 250;
+
+   @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      width: 600px;
+    }
 }

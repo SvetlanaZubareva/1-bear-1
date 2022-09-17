@@ -3,6 +3,11 @@
     text-align: left;
     padding: 25px 30px 30px;
     list-style-type: none;
+
+    @media (min-width: @tablet-width) {
+        width: 100%;
+      }
+
 }
 
 .main-container__span {
@@ -52,6 +57,16 @@
 .main-container__ul {
     margin: 0;
     padding: 0;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 750px;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+      }
 }
 
 .main-container__ul-list {
