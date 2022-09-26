@@ -4,6 +4,13 @@
     line-height: 30px;
     color: #000000;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+        font-size: 43px;
+        line-height: 50px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
 }
 
 .blanks-secondary__span {
@@ -12,6 +19,15 @@
     line-height: 20px;
     color: #63d1bb;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 2%;
+    }
 }
 
 .blanks-secondary__paragraph {
@@ -33,12 +49,24 @@
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .blanks-secondary__paragraph--pozition {
     text-align: left;
     margin: 0;
     margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+       margin-bottom: 0;
+    }
 }
 
 .blanks-secondary__h2 {
